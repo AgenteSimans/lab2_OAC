@@ -1,3 +1,4 @@
+#Utilizando a linguagem Python como Pseudocodigo para o assemple 
 g = int(input())
 h = int(input())
 i = int(input())
@@ -8,3 +9,4 @@ if i==j:
     f = g +h 
 else:
     f = g-h
+print(f)

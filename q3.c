@@ -1,3 +1,4 @@
+///Utilizando a linguagem C como Pseudocodigo para o assemple
 #include <stdio.h>
 int f=0,g,h,i,j;
 
@@ -8,6 +9,8 @@ int main(){
     }else{
         f=g-h;
     }
+    printf("%d",f);
+    return 0;
     
 }
 

@@ -1,15 +1,13 @@
-##addi x13,x0,0 #co
-##addi x14,x0,3 #controle for
-
+#carregando valores para os registradores
 lw x10, a
 lw x11, b
 lw x12, m
 
-bge x11, x12, if
+bge x11, x12, if #comparacao negada em relacao ao probleama pra pular linha de codigo
 add x12, x10, x11
 
 if:
-
+#guardando valor na memoria
 sw x12 ,m 
 
 

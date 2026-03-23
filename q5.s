@@ -6,3 +6,4 @@ loop:
     sb x10, 1024(0x)
     jal x0, loop
 fim:
+halt

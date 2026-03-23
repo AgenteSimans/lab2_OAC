@@ -1,24 +1,24 @@
-#carregando valores para os registradores
-lw 0x19, f
-lw 0x20, g
-lw 0x21, h
-lw 0x22, i
-lw 0x23, j
+lw x19, f
+lw x20, g
+lw x21, h
+lw x22, i
+lw x23, J
 
-beq 0x22, 0x23, if #Comparação entre i e j, caso sejam iguais pula para o if
-#/else
-sub 0x19, 0x20, 0x21
-jal x0, fim #evitando a instruções do if
+
+beq x22, x23, if 
+
+sub x19, x20, x21
+jal x0, fim 
 
 if:
-add 0x19, 0x20,0x21
+add x19, x20,x21
 
 fim:
-sw 0x19, f #guardando valor na memoria
+sw x19, f 
 halt
 
-f .word 0x19 
-g .word 0x20
-h .word 0x21
-i .word 0x22
-j .word 0x23
+f: .word 19 
+g: .word 20
+h: .word 21
+i: .word 22
+J: .word 22
